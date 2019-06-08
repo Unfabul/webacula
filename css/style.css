@@ -192,6 +192,9 @@ h1{
 .tours-block{
     padding: 75px 0;
 }
+.tours-block-cont{
+    margin-bottom: 65px;
+}
 .tours-block-links{
     display: flex;
 }
@@ -209,7 +212,9 @@ h1{
 .tours-block-links a.active{
     color: #fbd341;
 }
-
+.your-class{
+    margin: 0 90px;
+}
 
 .adv{
     padding: 45px 0;
@@ -302,4 +307,7 @@ form button{
     outline: none;
     border: none;
 }
-  
+footer{
+    padding: 45px 0 30px 0;
+    background-color: #22334d;
+}

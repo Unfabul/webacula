@@ -52,3 +52,30 @@ servs.addEventListener('click', function(){
         servs.classList.add('open');
     }
 });
+
+$(document).ready(function(){
+    $('.your-class').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              infinite: true
+            }
+          },
+          {
+            breakpoint: 800,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true
+            }
+          }
+        ]
+    });
+});
