@@ -257,3 +257,49 @@ form{
     display: flex;
     align-items: center;
 }
+form input{
+    font-size: 18px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #67727c;
+    padding: 5px 10px;
+    outline: none;
+}
+form input::placeholder{
+    color: #e6e6e6;
+}
+form input[name="name"]{
+    width: 140px;
+    margin-right: 30px;
+}
+form input[name="email"]{
+    width: 190px;
+    margin-right: 30px;
+}
+form input[name="phone"]{
+    width: 150px;
+    margin-right: 45px;
+}
+form select{
+    width: 180px;
+    font-size: 18px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #67727c;
+    padding: 5px 10px;
+    outline: none;
+    margin-right: 50px;
+}
+form select option{
+    padding: 5px 10px;
+}
+form button{
+    padding: 17px 30px;
+    background-color: #fbd341;
+    font-size: 18px;
+    color: black;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+  
