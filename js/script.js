@@ -16,18 +16,18 @@ let sliderBullets = document.querySelectorAll('.bullet');
 // }, 1000);
 
 // Слайдер
-sliderBullets.forEach(function(sliderBulletsEl, index){
+// sliderBullets.forEach(function(sliderBulletsEl, index){
 
-    sliderBulletsEl.addEventListener('click', function(){
-        sliderBullets.forEach(function(sliderBulletsActiveEl, index){
-            sliderBulletsActiveEl.classList.remove('active');
-        });
-        this.classList.add('active');
-        slider.style.transform = 'translate(-'+ document.body.clientWidth*index + 'px)';
-        console.log(slider.style.transform);
-    });
+//     sliderBulletsEl.addEventListener('click', function(){
+//         sliderBullets.forEach(function(sliderBulletsActiveEl, index){
+//             sliderBulletsActiveEl.classList.remove('active');
+//         });
+//         this.classList.add('active');
+//         slider.style.transform = 'translate(-'+ document.body.clientWidth*index + 'px)';
+//         console.log(slider.style.transform);
+//     });
 
-});
+// });
 
 let tours = document.querySelector('.tours-line'),
     tour = document.querySelector('.tour');
@@ -53,29 +53,37 @@ servs.addEventListener('click', function(){
     }
 });
 
-$(document).ready(function(){
-    $('.your-class').slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        arrows: true,
-        responsive: [
-          {
-            breakpoint: 1200,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1,
-              infinite: true
-            }
-          },
-          {
-            breakpoint: 800,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              infinite: true
-            }
-          }
-        ]
-    });
+$('.one-class').slick({
+    dots: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    fade: true,
+    cssEase: 'linear',
+    appendDots: $('.bullets')
+});
+
+$('.two-class').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: true,
+    responsive: [
+        {
+        breakpoint: 1200,
+        settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: true
+        }
+        },
+        {
+        breakpoint: 800,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true
+        }
+        }
+    ]
 });

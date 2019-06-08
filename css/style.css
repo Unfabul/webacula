@@ -11,7 +11,12 @@ header{
     overflow: hidden;
     box-sizing: border-box;
 }
-.banner-slider{
+.one-class{
+    position: absolute;
+    height: inherit;
+    z-index: 1;
+}
+/* .banner-slider{
     position: absolute;
     width: 500%;
     height: inherit;
@@ -40,7 +45,7 @@ header{
 }
 .slide:last-child{
     background-image: url(/img/banner5.jpg);
-}
+} */
 .banner-bg{
     height: 100%;
     width: 100%;
@@ -174,7 +179,7 @@ h1{
 .bullets{
     display: flex;
 }
-.bullet{
+/* .bullet{
     width: 12px;
     height: 12px;
     background-color: #caedf0;
@@ -188,7 +193,7 @@ h1{
 }
 .bullet:hover{
     background-color: #fbd341;
-}
+} */
 .tours-block{
     padding: 75px 0;
 }
@@ -212,7 +217,7 @@ h1{
 .tours-block-links a.active{
     color: #fbd341;
 }
-.your-class{
+.two-class{
     margin: 0 90px;
 }
 
