@@ -6,46 +6,43 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800,900&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="/slick/slick.css">
-    <link rel="stylesheet" href="/slick/slick-theme.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/public/css/vendor.min.css">
+    <link rel="stylesheet" href="/public/css/app.css">
     <title>КУРАЖ ТУР</title>
 </head>
 <body>
     <header>
         <div class="one-class">
-            <div><img src="/img/banner1-min.jpg"></div>
-            <div><img src="/img/banner2-min.jpg"></div>
-            <div><img src="/img/banner3-min.jpg"></div>
-            <div><img src="/img/banner4-min.jpg"></div>
-            <div><img src="/img/banner5-min.jpg"></div>
+            <div><img src="/public/img/banner1-min.jpg"></div>
+            <div><img src="/public/img/banner2-min.jpg"></div>
+            <div><img src="/public/img/banner3-min.jpg"></div>
+            <div><img src="/public/img/banner4-min.jpg"></div>
+            <div><img src="/public/img/banner5-min.jpg"></div>
         </div>
 
-        <!-- <div class="banner-slider">
-            <div class="slide"></div>
-            <div class="slide"></div>
-            <div class="slide"></div>
-            <div class="slide"></div>
-            <div class="slide"></div>
-        </div> -->
-
         <div class="banner-bg">
-
             <div class="container head">
                 <div class="row head-block">
-                    <div class="col-1"><a href="#"><img src="/img/logo.png" alt="Логотип"></a></div>
-                    <div class="col-8">
+                    <div class="col-xl-1 col-lg-1 col-md-12 logo-middle"><a href="#"><img src="/public/img/logo.png" alt="Логотип"></a></div>
+                    <div class="col-xl-8 col-lg-10 col-md-12">
                         <div class="row top-head">
-                            <div class="col offset-1 top-head-text"><img src="img/Слой 3.png" alt="">г. Харьков, ул. Мироносицкая 10а</div>
-                            <div class="col top-head-text"><img src="img/Слой 4.png" alt="">+38 (099) 990-81-00  (viber, telegram)</div>
-                            <div class="col-2 top-head-social"><a href="#"><img src="img/Слой 7.png" alt=""></a><a href="#"><img src="img/Слой 8.png" alt=""></a></div>
+                            <div class="col-xl col-lg col-md top-head-text text-1 col-sm-12"><img src="/public/img/Слой 3.png" alt="">г. Харьков, ул. Мироносицкая 10а</div>
+                            <div class="col-xl col-lg col-md top-head-text col-sm-12"><img src="/public/img/Слой 4.png" alt="">+38 (099) 990-81-00  (viber, telegram)</div>
+                            <div class="col-xl-2 col-lg-2 col-md-2 top-head-social col-sm-12 col-xs-12"><a href="#"><img src="/public/img/Слой 7.png" alt=""></a><a href="#"><img src="/public/img/Слой 8.png" alt=""></a></div>
                         </div>
                         <div class="row top-menu">
-                            <div class="col-12">
+                            <div class="col-xl-12 col-lg-12 col-md-12">
+
+                                <div class="burger-button">
+                                    <div class="line"></div>
+                                    <div class="line"></div>
+                                    <div class="line"></div>
+                                </div>
+
                                 <nav>
                                     <ul class="menu">
                                         <li><a href="#">Главная</a></li>
-                                        <li class="tours-line"><a href="#">Туры</a><div class="line1"></div><div class="line2"></div>
+                                        <li class="tours-line open"><a>Туры</a><div class="line1"></div><div class="line2"></div>
                                             <div class="dd-menu tour">
                                                 <ul>
                                                     <li><a href="#">Горящие туры</a></li>
@@ -57,7 +54,7 @@
                                             </div>
                                         </li>
                                         <li><a href="#">Страны</a></li>
-                                        <li class="serv-line"><a href="#">Услуги</a><div class="line1"></div><div class="line2"></div>
+                                        <li class="serv-line open"><a>Услуги</a><div class="line1"></div><div class="line2"></div>
                                             <div class="dd-menu serv">
                                                 <ul>
                                                     <li><a href="#">Авиабилеты</a></li>
@@ -73,6 +70,7 @@
                                         <li><a href="#">Контакты</a></li>
                                     </ul>
                                 </nav>
+
                             </div>
                         </div>
                     </div>
@@ -89,16 +87,13 @@
 
             <div class="container">
                 <div class="row">
-                    <div class="col-2 bullets"></div>
+                    <div class="col-xl-2 col-lg-3 col-md-5 bullets"></div>
                 </div>
             </div>
-
         </div>
-
     </header>
 
     <main>
-
         <div class="tours-block">
             <div class="container tours-block-cont">
                 <div class="row">
@@ -107,16 +102,60 @@
                         <a href="#">Популярные туры</a>
                     </div>
                 </div>
-
             </div>
             <div class="two-class">
                 <div class="tour-item">
-                    
+                    <div class="tour-item-block">
+                        <div class="tour-item-img"><img src="/public/img/Слой 11.png" alt=""></div>
+                        <div class="tour-item-text">
+                            <p class="title">8 марта в Cyrene Sharm hotel</p>
+                            <p class="date">(12.03.2018 — 19.03.2018)</p>
+                            <div class="line"></div>
+                            <p class="desc">Перелёт, питание по системе all inclusive, трансфер</p>
+                            <p class="price">1 259 грн</p>
+                            <a class="tour-button" href="#"><div class="tour-button-arrow"><div class="arrow">></div></div></a>
+                        </div>
+                    </div>
                 </div>
-                <div><img src="/img/adv.jpg" alt=""></div>
-                <div><img src="/img/adv.jpg" alt=""></div>
-                <div><img src="/img/adv.jpg" alt=""></div>
-                <div><img src="/img/adv.jpg" alt=""></div>
+                <div class="tour-item">
+                    <div class="tour-item-block">
+                        <div class="tour-item-img"><img src="/public/img/Слой 21.png" alt=""></div>
+                        <div class="tour-item-text">
+                            <p class="title">8 марта в Cyrene Sharm hotel</p>
+                            <p class="date">(12.03.2018 — 19.03.2018)</p>
+                            <div class="line"></div>
+                            <p class="desc">Перелёт, питание по системе all inclusive, трансфер</p>
+                            <p class="price">1 259 грн</p>
+                            <a class="tour-button" href="#"><div class="tour-button-arrow"><div class="arrow">></div></div></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tour-item">
+                    <div class="tour-item-block">
+                        <div class="tour-item-img"><img src="/public/img/Слой 21.png" alt=""></div>
+                        <div class="tour-item-text">
+                            <p class="title">8 марта в Cyrene Sharm hotel</p>
+                            <p class="date">(12.03.2018 — 19.03.2018)</p>
+                            <div class="line"></div>
+                            <p class="desc">Перелёт, питание по системе all inclusive, трансфер</p>
+                            <p class="price">1 259 грн</p>
+                            <a class="tour-button" href="#"><div class="tour-button-arrow"><div class="arrow">></div></div></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tour-item">
+                    <div class="tour-item-block">
+                        <div class="tour-item-img"><img src="/public/img/Слой 11.png" alt=""></div>
+                        <div class="tour-item-text">
+                            <p class="title">8 марта в Cyrene Sharm hotel</p>
+                            <p class="date">(12.03.2018 — 19.03.2018)</p>
+                            <div class="line"></div>
+                            <p class="desc">Перелёт, питание по системе all inclusive, трансфер</p>
+                            <p class="price">1 259 грн</p>
+                            <a class="tour-button" href="#"><div class="tour-button-arrow"><div class="arrow">></div></div></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -128,7 +167,7 @@
                     </div>
                 </div>
                 <div class="row adv-text">
-                    <div class="col-5"><img src="/img/adv.jpg" alt=""></div>
+                    <div class="col-5 adv-img"><img src="/public/img/adv-min.jpg" alt=""></div>
                     <div class="col-7 adv-text-block">
                         <div class="text">
                             <p>Очень долго подбирали разные варианты для того, чтобы отпраздновать свой юбилейный День рождения в путешествии и не могли определиться... Решили обратиться за помощью в турагенство. Гульнара, выслушав все пожелания, предложила отдых в Турции, отель Justiniano Club Park Conti 5* в Окурджалар возле Аланьи. Мы очень благодарны ей за предложенный вариант!!!! Отдых получился отличный! Отель с большой ухоженной территорией, внимательный обслуживающий персонал. Отличный номер с видом на море.</p>
@@ -138,7 +177,6 @@
                 </div>
             </div>
         </div>
-
     </main>
 
     <section class="adv-form">
@@ -150,7 +188,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col form-block">
+                    <div class="col-xl-12 col-lg-10 form-block">
                         <form action="#" method="GET">
                             <input type="text" name="name" placeholder="Имя">
                             <input type="text" name="email" placeholder="Email">
@@ -180,8 +218,9 @@
             </div>
         </div>
     </footer>
-    <script src="/js/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="/slick/slick.min.js"></script>
-    <script src="/js/script.js"></script>
+
+    <script src="/public/js/vendor.min.js"></script>
+    <script src="/public/js/app.js"></script>
+
 </body>
 </html>
